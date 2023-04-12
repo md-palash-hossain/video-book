@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './verse-selector.module.scss';
 
-const VerseSelector = ({ verses, selectedVerse, onVerseSelect }) => {
+interface Props {
+  verses: string[];
+  selectedVerse: string;
+  onVerseSelect: (verse: string) => void;
+}
+
+const VerseSelector = ({ verses, selectedVerse, onVerseSelect }: Props) => {
   return (
     <div className={styles.verseSelector}>
       {verses.map((verse, index) => (
