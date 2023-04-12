@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './verse-list.module.scss';
 import VerseListItem from '../verse-list-item/verse-list-item';
+import { Chapter } from '../../model/types';
 
 type Props = {
   book: string;
-  chapter: number;
-  selectedVerses: string[];
+  chapter: Chapter;
+  selectedVerses: string;
   onVerseSelect: (verse: string) => void;
   onVerseDeselect: (verse: string) => void;
 };
@@ -22,7 +23,7 @@ const VerseList: React.FC<Props> = ({
   return (
     <div className={styles.verseList}>
       <h3 className={styles.verseListTitle}>
-        {book} {chapter}
+        {book+' '+chapter.id}
       </h3>
       <ul className={styles.verseListItems}>
         {verses.map((verse) => (

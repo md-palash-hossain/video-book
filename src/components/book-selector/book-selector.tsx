@@ -58,14 +58,13 @@
 
 import React, { useState } from 'react';
 import styles from './book-selector.module.scss';
-import App_module from '../../App.module.scss';
-import Classnames from 'classnames';
+import { Book } from '../../model/types';
 
-interface Book {
-    id: number;
-    name: string;
-    numChapters: number;
-}
+// interface Book {
+//     id: number;
+//     name: string;
+//     numChapters: number;
+// }
 
 interface Props {
     oldTestamentBooks: Book[];

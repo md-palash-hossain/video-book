@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './chapter-selector.module.scss';
-import { Book } from '../../model/types';
+import { Book,Chapter } from '../../model/types';
 
 interface ChapterSelectorProps {
   book: Book;
-  selectedChapter: number;
-  onChapterChange: (chapter: number) => void;
+  selectedChapter: Chapter;
+  onChapterChange: (chapter: Chapter) => void;
 }
 
 const ChapterSelector: React.FC<ChapterSelectorProps> = ({
@@ -13,19 +13,19 @@ const ChapterSelector: React.FC<ChapterSelectorProps> = ({
   selectedChapter,
   onChapterChange,
 }) => {
-  const chapters = new Array(book.numChapters).fill(0).map((_, index) => index + 1);
+  // const chapters = new Array(book.numChapters).fill(0).map((_, index) => index + 1);
 
   return (
     <div className={styles.chapterSelector}>
-      {chapters.map((chapter) => (
+      {book.chapters.map((chapter) => (
         <div
-          key={chapter}
+          key={chapter.id}
           className={`${styles.chapter} ${
             chapter === selectedChapter ? styles.active : ''
           }`}
           onClick={() => onChapterChange(chapter)}
         >
-          {chapter}
+          {chapter.id}
         </div>
       ))}
     </div>

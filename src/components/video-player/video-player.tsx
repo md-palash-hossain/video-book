@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './video-player.module.scss';
-import { Book } from '../../model/types';
+import { Book, Chapter } from '../../model/types';
 
 type VideoPlayerProps = {
-  selectedVerses: string[];
+  selectedVerses: string;
   selectedBook: Book;
-  selectedChapter: number;
+  selectedChapter: Chapter;
 
 
 };
