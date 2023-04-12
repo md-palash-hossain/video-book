@@ -1,0 +1,40 @@
+.verseListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  transition: all 0.2s ease-in-out;
+
+  
+
+  &:hover {
+    background-color: #eaeaea;
+  }
+
+  &.selected {
+    background-color: #4285f4;
+    color: white;
+
+    &:hover {
+      background-color: #357ae8;
+    }
+  }
+}
+
+.verseNumber {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.verseText {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-left: 16px;
+}
+li{
+  padding: 3px;
+}

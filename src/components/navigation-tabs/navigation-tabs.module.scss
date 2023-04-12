@@ -1,0 +1,26 @@
+.navigationTabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  border: none;
+  background-color: transparent;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+}

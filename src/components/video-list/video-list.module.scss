@@ -1,0 +1,27 @@
+.videoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .videoList ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+  }
+  
+  .videoList li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .videoList li {
+    width: 100%;
+  }
+  

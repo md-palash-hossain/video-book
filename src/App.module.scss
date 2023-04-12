@@ -1,0 +1,84 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .tab {
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #999;
+    transition: all 0.3s ease;
+
+    &.active {
+      color: #333;
+      border-bottom: 2px solid #333;
+    }
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .chapters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .chapter {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+
+    &.active {
+      color: #333;
+      font-weight: bold;
+    }
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .verses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .verse {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+    transition: all 0.3s ease;
+
+    &.active {
+      color: #333;
+      font-weight: bold;
+    }
+
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}

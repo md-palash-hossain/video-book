@@ -1,0 +1,25 @@
+.chapterSelector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.chapter {
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #999;
+  transition: all 0.3s ease;
+
+  &.active {
+    color: #333;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: #333;
+  }
+}
